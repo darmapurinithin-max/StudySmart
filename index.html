@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StudySmart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>StudySmart</h1>
+    <p>Find study resources & plan your exams smartly</p>
+</header>
+
+<div class="container">
+
+    <!-- Reference Finder -->
+    <section>
+        <h2>Reference Finder</h2>
+        <input type="text" id="searchInput" placeholder="Enter topic (e.g. Data Structures)">
+        <button onclick="searchResources()">Search</button>
+        <div id="results"></div>
+    </section>
+
+    <!-- Exam Timetable Generator -->
+    <section>
+        <h2>Exam Timetable Generator</h2>
+
+        <div id="examInputs">
+            <input type="text" class="subject" placeholder="Subject">
+            <input type="date" class="date">
+        </div>
+
+        <button onclick="addExam()">Add Another Exam</button>
+        <button onclick="generateSchedule()">Generate Schedule</button>
+
+        <div id="schedule"></div>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
